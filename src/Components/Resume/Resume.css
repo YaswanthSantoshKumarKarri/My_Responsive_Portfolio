@@ -1,0 +1,127 @@
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 77vh;
+    padding: 6rem 0;
+
+}
+
+.headersResume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headersResume span:nth-of-type(1) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.headersResume span:nth-of-type(2) {
+    color: var(--black);
+    font-size: .8rem;
+}
+
+
+
+.divider div:nth-of-type(1) {
+    background-color: var(--black);
+    width: 7.5rem;
+    height: .1rem;
+    border-radius: 20%;
+    margin-top: .9rem;
+}
+
+.divider div:nth-of-type(2) {
+    position: relative;
+    background-color: var(--orange);
+    width: 1.5rem;
+    height: .5rem;
+    border-radius: 20%;
+    top: -7px;
+    left: 2.8rem;
+}
+
+.details {
+    margin-top: 2rem;
+}
+
+.d-left {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: var(--black);
+    color: #fff;
+    gap: 2rem;
+    padding: 3rem .4rem;
+}
+
+.d-middle {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    float: left;
+    padding: 3rem 0;
+    gap: 1.8rem;
+    margin: 0;
+
+}
+
+.d-middle div {
+    padding: .3rem 1rem;
+    position: relative;
+    right: 9px;
+    border-radius: 13px;
+    max-width: 10rem;
+}
+
+.d-middle div:hover {
+    background-color: var(--black);
+    color: #fff;
+
+}
+
+.d-right {
+    width: 550px;
+    float: right;
+}
+
+.circle {
+    background-color: var(--orange);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+
+}
+
+@media screen and (max-width: 480px) {
+    .details {
+        margin-top: 5px;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 10px;
+        transform: scale(0.9);
+    }
+
+    .d-left,
+    .d-middle {
+        position: relative;
+        left: 6rem;
+    }
+
+    .d-right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 6rem;
+    }
+
+}

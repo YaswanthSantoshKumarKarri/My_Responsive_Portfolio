@@ -1,0 +1,55 @@
+.EduDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem 0rem;
+    gap: 2rem;
+}
+
+.EduDetails div {}
+
+
+
+.EduDetails div span:nth-of-type(1) {
+    color: var(--orange);
+    position: relative;
+
+}
+
+.EduDetails div span:nth-of-type(2) {
+    font-size: 13px;
+}
+
+
+.ed-left {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    float: left;
+}
+
+.ed-right {
+    margin-left: 4rem;
+    float: right;
+}
+
+@media screen and (max-width: 480px) {
+
+    .EduDetails {
+        transform: scale(0.7);
+        position: relative;
+        left: -6rem;
+        gap: 2rem;
+    }
+
+    .ed-left {
+        gap: 1rem;
+    }
+
+    span {
+        font-size: 24px;
+    }
+
+    .edu-btn {
+        color: black;
+    }
+}
